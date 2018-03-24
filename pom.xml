@@ -28,6 +28,7 @@
     </parent>
     <properties>
         <javaVersion>1.8</javaVersion>
+        <sourceEncoding>utf-8</sourceEncoding>
     </properties>
 
     <developers>
@@ -57,13 +58,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ele-ipd-snapshot</id>
-            <name>Snapshots Repository</name>
-            <url>http://maven.dev.elenet.me/nexus/content/repositories/ele-ipd-snapshot/</url>
-        </snapshotRepository>
-    </distributionManagement>
     <build>
         <pluginManagement>
             <plugins>
@@ -110,16 +104,6 @@
                     <version>2.20.1</version>
                     <configuration>
                         <skipTests>true</skipTests>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>versions-maven-plugin</artifactId>
-                    <version>2.5</version>
-                    <configuration>
-                        <generateBackupPoms>false</generateBackupPoms>
-                        <processAllModules>true</processAllModules>
-                        <newVersion>${delimontIcsVersion}</newVersion>
                     </configuration>
                 </plugin>
             </plugins>

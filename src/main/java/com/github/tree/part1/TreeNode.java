@@ -1,5 +1,6 @@
 package com.github.tree.part1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,6 +14,7 @@ public class TreeNode {
 
     public TreeNode(String name) {
         this.name = name;
+        this.childNodes = new ArrayList<>();
     }
 
     //定义equals规则
