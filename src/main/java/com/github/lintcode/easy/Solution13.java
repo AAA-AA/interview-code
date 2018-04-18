@@ -18,7 +18,6 @@ public class Solution13 {
         }
         if (target.length() == 0) {
             result = 0;
-
         }
         if (source.length() < target.length()) {
             return result;
@@ -53,6 +52,9 @@ public class Solution13 {
     }
 
     public static void main(String[] args) {
-        new Solution13().strStr("abcde", "e");
+        String demo = "abcde";
+        int e = demo.indexOf("e");
+        System.out.println(e);
+       // new Solution13().strStr("abcde", "e");
     }
 }
