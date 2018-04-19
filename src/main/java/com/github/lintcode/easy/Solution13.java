@@ -54,7 +54,7 @@ public class Solution13 {
     public static void main(String[] args) {
         String demo = "abcde";
         int e = demo.indexOf("e");
-        System.out.println(e);
+        System.out.println(e+"   "+demo.indexOf(""));
        // new Solution13().strStr("abcde", "e");
     }
 }
